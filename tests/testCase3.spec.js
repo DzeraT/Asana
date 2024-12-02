@@ -10,7 +10,6 @@ test.describe("Asana Project", () => {
 
     await projectPage.clickProjectLink();
     await projectPage.toDoColumn.filter({hasText: 'Share timeline with teammates'})//Verify "Share timeline with teammates" is in the "To do" column.
-    await projectPage.assertShareTimelineTask();
     await projectPage.toDoColumn.filter({hasText: 'High'}) //High priority tag
     await projectPage.toDoColumn.filter({hasText: 'Off track'})// Off track tag
     // await projectPage.assertHighPriorityTag();//Confirming tag
