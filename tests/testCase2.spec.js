@@ -13,7 +13,6 @@ test.describe("Asana Project", () => {
     await projectPage.toDoColumn.filter({hasText: 'Schedule kickoff meeting'})//Verify "Schedule kickoff meeting" is in the "To do" column.
     await projectPage.toDoColumn.filter({hasText: 'Medium'});//   Confirm tag: "Medium"
     await projectPage.toDoColumn.filter({hasText: 'At risk.'})// Confirm tag: "At risk."
-    // await projectPage.assertTagMedium();
-    // await projectPage.assertTagAtRisk();
+    
   });
 });

@@ -17,7 +17,6 @@ test.describe("Asana Project", () => {
     await projectPage.toDoColumn.filter({hasText: 'Draft project brief'})//Verify "Draft project brief" is in the "To do" column.
     await projectPage.toDoColumn.filter({hasText: 'Non-Priority'})// Confirm "Non-Priority" tag
     await projectPage.toDoColumn.filter({hasText: 'On track'})// Confirm "On track" tag
-    // await projectPage.assertNonPriorityTag();
-    // await projectPage.assertOnTrackStatus();
+    
   });
 });
